@@ -3,10 +3,4 @@ if SHIELD_TEMPER_RIGHT
 config ZMK_KEYBOARD_NAME
     default "Temper Right"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-config ZMK_SPLIT
-    default n
-
 endif
