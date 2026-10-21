@@ -1,16 +1,13 @@
-if SHIELD_TEMPER_LEFT
+if SHIELD_TEMPER_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "temper"
+    default "Temper Right"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif
-
-if SHIELD_TEMPER_LEFT || SHIELD_TEMPER_RIGHT
-
+# Desactivamos el split porque ya no hay otra mitad
 config ZMK_SPLIT
-    default y
+    default n
 
 endif
