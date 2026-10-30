@@ -1,5 +1,6 @@
 /*
  * Temper Right – Single Hand
+ * Matrix 10 cols + col-offset 5; izquierda = &none
  * Capas: 0 Numpad | 1 Media | 2 Soft | 3 System
  */
 
@@ -21,37 +22,37 @@
 
         default_layer {
             bindings = <
-    &kp N7   &kp N8   &kp N9   &kp KP_MULTIPLY   &kp BSPC
-    &kp N4   &kp N5   &kp N6   &kp KP_MINUS      &kp TAB
-    &kp N1   &kp N2   &kp N3   &kp KP_PLUS       &kp RET
-                     &mo MEDIA &kp N0            &kp KP_DOT
+    &none &none &none &none &none    &kp N7 &kp N8 &kp N9 &kp KP_MULTIPLY &kp BSPC
+    &none &none &none &none &none    &kp N4 &kp N5 &kp N6 &kp KP_MINUS    &kp TAB
+    &none &none &none &none &none    &kp N1 &kp N2 &kp N3 &kp KP_PLUS     &kp RET
+              &none &none &none      &mo MEDIA &kp N0 &kp KP_DOT
             >;
         };
 
         media_layer {
             bindings = <
-    &kp C_VOL_UP  &kp C_MUTE  &kp C_VOL_DN  &kp C_BRI_UP  &kp PSCRN
-    &kp C_PREV    &kp C_PP    &kp C_NEXT    &kp C_BRI_DN  &kp LG(LS(N4))
-    &kp C_REWIND  &kp C_EJECT &kp C_FF      ______        &kp LG(LS(N5))
-                  &to DEFAULT &mo SOFT      &mo SYS
+    &none &none &none &none &none    &kp C_VOL_UP &kp C_MUTE &kp C_VOL_DN &kp C_BRI_UP &kp PSCRN
+    &none &none &none &none &none    &kp C_PREV   &kp C_PP   &kp C_NEXT   &kp C_BRI_DN &kp LG(LS(N4))
+    &none &none &none &none &none    &kp C_REWIND &kp C_EJECT &kp C_FF    ______       &kp LG(LS(N5))
+              &none &none &none      &to DEFAULT  &mo SOFT   &mo SYS
             >;
         };
 
         soft_layer {
             bindings = <
-    &kp G  &kp R  &kp S  &kp E       &kp TAB
-    &kp X  &kp Y  &kp Z  &kp KP_DOT  &kp DEL
-    &kp A  &kp B  &kp C  &kp F       &kp RET
-               &to DEFAULT ______    &mo SYS
+    &none &none &none &none &none    &kp G &kp R &kp S &kp E &kp TAB
+    &none &none &none &none &none    &kp X &kp Y &kp Z &kp KP_DOT &kp DEL
+    &none &none &none &none &none    &kp A &kp B &kp C &kp F &kp RET
+              &none &none &none      &to DEFAULT ______ &mo SYS
             >;
         };
 
         sys_layer {
             bindings = <
-    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-    &out OUT_USB  &out OUT_BLE  &bt BT_CLR    ______        ______
-    &to DEFAULT   &to MEDIA     &to SOFT      ______        ______
-                  ______        ______        ______
+    &none &none &none &none &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+    &none &none &none &none &none    &out OUT_USB &out OUT_BLE &bt BT_CLR   ______       ______
+    &none &none &none &none &none    &to DEFAULT  &to MEDIA    &to SOFT     ______       ______
+              &none &none &none      ______ ______ ______
             >;
         };
     };
